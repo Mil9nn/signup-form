@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>Login / Sigup Form</title>
 </head>
+
 <body>
-    <form>
-        <input type="text" />
-    </form>
+    <div class="flex-container">
+        <section class="image-section">
+            <img src="assets/north-lights.jpg" alt="northern-lights-image" />
+            <div class="odin-div">
+                <img src="assets/odin-lined.png" alt="odin-lined-png" />
+            </div>
+        </section>
+        <section class="right">
+            <div class="info">
+                <h2 class="info-header">This is not a real online service! You know you need something like this in your
+                    life to help you
+                    realize your deepest dreams. Sign up now to get started.</h2>
+                <p class="small-paragraph">You know you want to.</p>
+            </div>
+            <form class="form">
+                <div class="items-center">
+                    <label for="firstName">
+                        <span class="bold-font">First Name</span>
+                        <input class="input" type="text" name="firstName" id="firstName" placeholder="First Name" />
+                    </label>
+                    <label for="lastName">
+                        <span class="bold-font">Last Name</span>
+                        <input class="input" type="text" name="lastName" id="lastName" placeholder="Last Name" />
+                    </label>
+                </div>
+                <div class="items-center">
+                    <label for="email">
+                        <span class="bold-font">Email</span>
+                        <input class="input" type="email" name="email" id="email" placeholder="Email" />
+                    </label>
+                    <label for="phone">
+                        <span class="bold-font">Phone No</span>
+                        <input class="input" type="tel" name="phone" id="phone" placeholder="Phone No" />
+                    </label>
+                </div>
+                <div class="items-center">
+                    <label for="password">
+                        <span class="bold-font">Password</span>
+                        <input class="input" type="password" name="password" id="password" placeholder="Password" />
+                    </label>
+                    <label for="confirmPassword">
+                        <span class="bold-font">Confirm Password</span>
+                        <input class="input" type="password" name="confirmPassoword" id="confirmPassword" placeholder="Confirm Password" />
+                    </label>
+                </div>
+                <button class="submit-btn" type="submit">Create Account</button>
+                <p class="small-paragraph">Already have an account? <a href="/login">Log in</a></p>
+            </form>
+        </section>
+    </div>
 </body>
+
 </html>
