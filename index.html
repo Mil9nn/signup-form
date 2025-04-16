@@ -11,7 +11,8 @@
 <body>
     <div class="flex-container">
         <section class="image-section">
-            <img src="assets/north-lights.jpg" alt="northern-lights-image" />
+                <img src="assets/north-lights.jpg" alt="northern-lights-image" />
+                <p class="image-credit">Photo by <a style="color: white" href="">Unknown</a> on <a style="color: white" href="">Unknown</a></p>
             <div class="odin-div">
                 <img src="assets/odin-lined.png" alt="odin-lined-png" />
             </div>
@@ -24,38 +25,45 @@
                 <p class="small-paragraph">You know you want to.</p>
             </div>
             <form class="form">
-                <div class="items-center">
-                    <label for="firstName">
-                        <span class="bold-font">First Name</span>
-                        <input class="input" type="text" name="firstName" id="firstName" placeholder="First Name" />
-                    </label>
-                    <label for="lastName">
-                        <span class="bold-font">Last Name</span>
-                        <input class="input" type="text" name="lastName" id="lastName" placeholder="Last Name" />
-                    </label>
+                <div class="shadow-container">
+                    <p class="small-paragraph">Let's do this!</p>
+                    <div class="input-container">
+                        <div class="items-center">
+                            <label for="firstName">
+                                <span class="bold-font">First Name</span>
+                                <input class="input" type="text" name="firstName" id="firstName"  />
+                            </label>
+                            <label for="lastName">
+                                <span class="bold-font">Last Name</span>
+                                <input class="input" type="text" name="lastName" id="lastName"  />
+                            </label>
+                        </div>
+                        <div class="items-center">
+                            <label for="email">
+                                <span class="bold-font">Email</span>
+                                <input class="input" type="email" name="email" id="email"  />
+                            </label>
+                            <label for="phone">
+                                <span class="bold-font">Phone No</span>
+                                <input class="input" type="tel" name="phone" id="phone"  />
+                            </label>
+                        </div>
+                        <div class="items-center">
+                            <label for="password">
+                                <span class="bold-font">Password</span>
+                                <input class="input" type="password" minlength="6" name="password" id="password"  />
+                            </label>
+                            <label for="confirmPassword">
+                                <span class="bold-font">Confirm Password</span>
+                                <input class="input" type="password" minlength="6" name="confirmPassoword" id="confirmPassword" />
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="items-center">
-                    <label for="email">
-                        <span class="bold-font">Email</span>
-                        <input class="input" type="email" name="email" id="email" placeholder="Email" />
-                    </label>
-                    <label for="phone">
-                        <span class="bold-font">Phone No</span>
-                        <input class="input" type="tel" name="phone" id="phone" placeholder="Phone No" />
-                    </label>
+                <div class="px-2">
+                    <button class="submit-btn" type="submit">Create Account</button>
+                    <p class="small-paragraph">Already have an account? <a href="/login">Log in</a></p>
                 </div>
-                <div class="items-center">
-                    <label for="password">
-                        <span class="bold-font">Password</span>
-                        <input class="input" type="password" name="password" id="password" placeholder="Password" />
-                    </label>
-                    <label for="confirmPassword">
-                        <span class="bold-font">Confirm Password</span>
-                        <input class="input" type="password" name="confirmPassoword" id="confirmPassword" placeholder="Confirm Password" />
-                    </label>
-                </div>
-                <button class="submit-btn" type="submit">Create Account</button>
-                <p class="small-paragraph">Already have an account? <a href="/login">Log in</a></p>
             </form>
         </section>
     </div>
